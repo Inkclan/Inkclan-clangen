@@ -21,7 +21,7 @@
 		]
 	},
 	"mates":{
-		"age_range": 40,
+		"age_range": 60,
 		"override_same_age_group": false,
 		"chance_fulfilled_condition": 5,
 		"chance_friends_to_lovers": 170,
@@ -180,14 +180,14 @@
 		]
 	},
 	"cat_generation": {
-		"base_permanent_condition": 90,
-		"base_male_tortie": 13,
-		"base_female_tortie": 4,
-		"base_heterochromia": 120,
+		"base_permanent_condition": 50,
+		"base_male_tortie": 3,
+		"base_female_tortie": 3,
+		"base_heterochromia": 60,
 		"direct_inheritance": 15,
-		"wildcard_tortie": 9,
-		"vit_chance": 8,
-		"random_point_chance": 5
+		"wildcard_tortie": 2,
+		"vit_chance": 7,
+		"random_point_chance": 4
 	},
 	"cat_name_controls": {
 		"always_name_after_appearance": false,
@@ -200,8 +200,8 @@
 		]
 	},
 	"accessory_generation": {
-		"base_acc_chance": 150,
-		"med_modifier": -80,
+		"base_acc_chance": 100,
+		"med_modifier": -60,
 		"baby_modifier": -20,
 		"elder_modifier": 20,
 		"happy_trait_modifier": -30,
@@ -283,7 +283,7 @@
 		"war_injury_modifier": 100
 	},
 	"clan_creation": {
-		"rerolls": 3,
+		"rerolls": -1,
 		"comment": "Set this to -1 for it to be infinite"
 	},
 	"graduation": {
