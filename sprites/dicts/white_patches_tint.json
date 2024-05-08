@@ -2,32 +2,65 @@
   "colour_groups":
   {
     "WHITE": "white",
-    "PALEGREY": "gray",
-    "SILVER": "gray",
+    "PALEGREY": "pgray",
+    "SILVER": "sgray",
     "GREY": "gray",
-    "DARKGREY": "black",
-    "GHOST": "black",
+    "DARKGREY": "dblack",
+    "GHOST": "gblack",
     "BLACK": "black",
-    "CREAM": "ginger",
-    "PALEGINGER": "ginger",
-    "GOLDEN": "ginger",
+    "CREAM": "cginger",
+    "PALEGINGER": "pginger",
+    "GOLDEN": "goldginger",
     "GINGER": "ginger",
-    "DARKGINGER": "ginger",
-    "SIENNA": "ginger",
-    "LIGHTBROWN": "brown",
-    "LILAC": "brown",
+    "DARKGINGER": "dginger",
+    "SIENNA": "sginger",
+    "LIGHTBROWN": "lbbrown",
+    "LILAC": "lbrown",
     "BROWN": "brown",
-    "GOLDEN-BROWN": "brown",
-    "DARKBROWN": "brown",
-    "CHOCOLATE": "brown"
+    "GOLDEN-BROWN": "gbrown",
+    "DARKBROWN": "dbrown",
+    "CHOCOLATE": "cbrown"
   },
   "possible_tints": {
     "basic": ["none", "offwhite", "offwhite"],
-    "black": ["gray", "darkcream", "cream"],
-    "gray": ["gray"],
-    "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
-    "white": []
+ 
+    "white": ["midwhite", "dark", "cooldark", "warmdark", "realgray", "palegray", "darkwhite", "lightwhite", "lightorange", "midorange", "deeporange", "lightgold", "midgold", "lightgblack"],
+    
+    "pgray": ["midpgray", "gray", "dark", "cooldark", "warmdark", "darkpgray", "lightpgray", "lightorange", "dusty", "blue", "mocha", "honeydew", "ashgray", "violet", "powder"],
+   
+    "sgray": ["midsgray", "gray", "dark", "cooldark", "warmdark", "darksgray", "lightsgray", "lightorange", "midorange", "blue", "mocha", "honeydew", "ashgray", "violet", "powder"],
+  
+    "gray": ["midgray", "gray", "dark", "cooldark", "warmdark", "darkgray", "lightgray", "lightorange", "midorange", "lightgold", "blue", "mocha", "honeydew", "ashgray", "violet", "powder"],
+  
+    "dblack": ["middblack", "gray", "darkcream", "cream", "darkdblack", "lightdblack", "lightorange", "darkorange", "lightgold", "midgold", "ashgray", "violet", "powder", "blue"],
+ 
+    "gblack": ["midgblack", "gray", "darkcream", "cream", "darkgblack", "lightgblack", "lightorange", "midorange", "ashgray", "violet", "powder", "blue"],
+  
+    "black": ["midblack", "gray", "darkcream", "cream", "realgray", "palegray", "darkblack", "lightblack", "lightorange", "darkorange", "deeporange", "lightgold", "midgold", "dusty", "lightgblack", "ashgray", "violet", "powder", "blue"],
+  
+    "cginger": ["midcginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "darkcginger", "lightcginger", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+  
+    "pginger": ["midpginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "realgray", "palegray", "darkpginger", "lightpginger", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+  
+    "goldginger": ["midgoldginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "darkgoldginger", "lightgoldginger", "lightgold", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+  
+    "ginger": ["midginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "lightginger", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+  
+    "dginger": ["middginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "darkdginger", "lightdginger", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+
+    "sginger": ["midsginger", "darkcream", "cream", "pink", "dark", "cooldark", "warmdark", "darksginger", "lightsginger", "dusty", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry"],
+  
+    "lbbrown": ["midlbbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "lightlbbrown", "deeporange", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"],
+ 
+    "lbrown": ["midlbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "darklbrown", "lightlbrown", "lightgblack", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"],
+  
+    "brown": ["midbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "darkbrown", "lightbrown", "dusty", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"],
+
+    "gbrown": ["midgbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "darkgbrown", "lightgbrown", "lightgold", "dusty", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"],
+ 
+    "dbrown": ["middbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "palegray", "darkdbrown", "lightdbrown", "lightgold", "dusty", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"],
+  
+    "cbrown": ["midcbrown", "darkcream", "cream", "dark", "cooldark", "warmdark", "palegray", "darkcbrown", "lightcbrown", "lightgold", "dusty", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach"]
   },
   "tint_colours":
   {
@@ -36,6 +69,102 @@
     "offwhite": [238, 249, 252],
     "gray": [208, 225, 229],
     "pink": [254, 248, 249],
+    "dark": [38, 38, 38],
+    "cooldark": [38, 38, 48],
+    "warmdark": [46, 38, 38],
+    "realgray": [100, 100, 100],
+    "palegray": [150, 150, 150],
+
+    "midwhite": [226, 237, 242],
+    "midpgray": [192, 214, 211],
+    "midsgray": [159, 185, 189],
+    "midgray": [146, 160, 160],
+    "middblack": [92, 109, 112],
+    "midgblack": [82, 96, 101],
+    "midblack": [47, 53, 57],
+    "midcginger": [243, 215, 180],
+    "midpginger": [230, 192, 149],
+    "midgoldginger": [230, 180, 116],
+    "midginger": [242, 169, 107],
+    "middginger": [209, 112, 59],
+    "midsginger": [169, 87, 61],
+    "midlbbrown": [223, 207, 178],
+    "midlbrown": [180, 155, 148],
+    "midbrown": [169, 144, 119],
+    "midgbrown": [151, 102, 85],
+    "middbrown": [118, 83, 65],
+    "midcbrown": [132, 88, 81],
+
+    "darkwhite": [162, 173, 179],
+    "darkpgray": [120, 138, 137],
+    "darksgray": [53, 68, 77],
+    "darkgray": [83, 97, 97],
+    "darkdblack": [21, 32, 31],
+    "darkgblack": [31, 36, 39],
+    "darkblack": [11, 15, 24],
+    "darkcginger": [215, 168, 129],
+    "darkpginger": [200, 137, 92],
+    "darkgoldginger": [118, 84, 65],
+    "darkginger": [172, 91, 45],
+    "darkdginger": [111, 46, 24],
+    "darksginger": [80, 42, 45],
+    "darklbbrown": [122, 104, 80],
+    "darklbrown": [101, 81, 82],
+    "darkbrown": [66, 52, 44],
+    "darkgbrown": [67, 46, 44],
+    "darkdbrown": [57, 35, 31],
+    "darkcbrown": [45, 31, 33],
+
+    "lightwhite": [246, 251, 248],
+    "lightpgray": [218, 225, 212],
+    "lightsgray": [200, 211, 203],
+    "lightgray": [175, 184, 178],
+    "lightdblack": [129, 140, 139],
+    "lightgblack": [147, 164, 183],
+    "lightblack": [197, 195, 185],
+    "lightcginger": [249, 245, 241],
+    "lightpginger": [248, 244, 235],
+    "lightgoldginger": [242, 231, 205],
+    "lightginger": [255, 233, 176],
+    "lightdginger": [250, 221, 164],
+    "lightsginger": [203, 185, 147],
+    "lightlbbrown": [235, 226, 207],
+    "lightlbrown": [215, 187, 163],
+    "lightbrown": [236, 227, 208],
+    "lightgbrown": [219, 200, 172],
+    "lightdbrown": [183, 157, 136],
+    "lightcbrown": [184, 154, 146],
+
+    "lightorange": [252, 229, 172],
+    "midorange": [242, 169, 107],
+    "darkorange": [189, 86, 41],
+    "deeporange": [137, 66, 60],
+    "lightgold": [241, 222, 184],
+    "midgold": [242, 207, 168],
+    "dusty": [208, 190, 169],
+
+    "blue": [234, 237, 251],
+    "orange": [245, 236, 221],
+    "ebb": [241, 235, 235],
+    "almond": [249, 245, 239],
+    "mocha": [241, 244, 241],
+    "honeydew": [244, 252, 236],
+    "vanilla": [250, 242, 213],
+    "malted": [228, 216, 207],
+    "ashgray": [231, 233, 230],
+    "coffee": [237, 223, 206],
+    "cherry": [247, 235, 247],
+    "dawn": [245, 236, 232],
+    "powder": [228, 232, 241],
+    "peach": [255, 236, 226],
+    "violet": [238, 234, 247],
+    "coyote": [196, 187, 178],
+    "obsidian": [188, 188, 188],
+    "caramel": [231, 210, 191],
+    "golden": [250, 233, 196],
+    "black": [37, 37, 41],
+    "stone": [217, 217, 215],
+
     "none": null
   }
 }
