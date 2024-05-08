@@ -117,7 +117,7 @@ class Sprites():
             'maskedcolours', 
             'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
             'medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
-            'fadestarclan', 'fadedarkforest'
+            'fadestarclan', 'fadedarkforest', 'minkstorties', 'minkswhite', 'moreeyes', 'moreeyes2', 'eyeswood', 'eyeswood2'
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -149,6 +149,26 @@ class Sprites():
                 'PALEYELLOW', 'GOLD', 'GREENYELLOW']):
             self.make_group('eyes', (a, 1), f'eyes{i}')
             self.make_group('eyes2', (a, 1), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BROWN', 'CEDAR', 'CHRISTMAS', 'COTTON CANDY', 'DARK PINE', 'FALL',
+                'FOREST FIRE', 'GOLD MOON', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE']):
+            self.make_group('eyeswood', (a, 0), f'eyes{i}')
+            self.make_group('eyeswood2', (a, 0), f'eyes2{i}')
+        for a, i in enumerate(
+                ['OXIDIZED', 'SNOW', 'BERRY BANANA', 'SUNSET BLUE', 'SUNSET ORANGE', 'SUNSET PURPLE',
+                'WALNUT', 'WORMY', 'BLUE HAZEL']):
+            self.make_group('eyeswood', (a, 1), f'eyes{i}')
+            self.make_group('eyeswood2', (a, 1), f'eyes2{i}')
+        for a, i in enumerate(
+                ['ROSE', 'TROPICAL GREEN', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 
+                'TROPICAL RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH']):
+            self.make_group('moreeyes', (a, 0), f'eyes{i}')
+            self.make_group('moreeyes2', (a, 0), f'eyes2{i}')
+        for a, i in enumerate(
+                ['PUMPKIN', 'LILAC', 'PERIWINKLE', 'VIOLET', 'POND', 'DIRT'
+                ]):
+            self.make_group('moreeyes', (a, 1), f'eyes{i}')
+            self.make_group('moreeyes2', (a, 1), f'eyes2{i}')
 
         # white patches
         for a, i in enumerate(['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO',
@@ -185,6 +205,17 @@ class Sprites():
             self.make_group('whitepatches', (a, 8), f'white{i}')
         for a, i in enumerate(['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE']):
             self.make_group('whitepatches', (a, 9), 'white' + i)
+        # minks white patches
+        for a, i in enumerate(['MINKONE', 'MINKTWO', 'MINKTHREE', 'MINKFOUR', 'MINKREDTAIL', 'MINKDELILAH', 'MINKHALF', 'MINKSTREAK', 'MINKMASK', 'MINKSMOKE']):
+            self.make_group('minkswhite', (a, 0), f'white{i}')
+        for a, i in enumerate(['MINKMINIMALONE', 'MINKMINIMALTWO', 'MINKMINIMALTHREE', 'MINKMINIMALFOUR', 'MINKOREO', 'MINKSWOOP', 'MINKCHIMERA', 'MINKCHEST', 'MINKARMTAIL', 'MINKGRUMPYFACE']):
+            self.make_group('minkswhite', (a, 1), f'white{i}')
+        for a, i in enumerate(['MINKMOTTLED', 'MINKSIDEMASK', 'MINKEYEDOT', 'MINKBANDANA', 'MINKPACMAN', 'MINKSTREAMSTRIKE', 'MINKSMUDGED', 'MINKDAUB', 'MINKEMBER', 'MINKBRIE']):
+            self.make_group('minkswhite', (a, 2), f'white{i}')
+        for a, i in enumerate(['MINKORIOLE', 'MINKROBIN', 'MINKBRINDLE', 'MINKPAIGE', 'MINKROSETAIL', 'MINKSAFI', 'MINKDAPPLENIGHT', 'MINKBLANKET', 'MINKBELOVED', 'MINKBODY']):
+            self.make_group('minkswhite', (a, 3), f'white{i}')
+        for a, i in enumerate(['MINKSHILOH', 'MINKFRECKLED', 'MINKHEARTBEAT']):
+            self.make_group('minkswhite', (a, 4), f'white{i}')
 
         # single (solid)
         for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
@@ -296,6 +327,35 @@ class Sprites():
             self.make_group('tortiepatchesmasks', (a, 3), f"tortiemask{i}")
         for a, i in enumerate(['SHILOH', 'FRECKLED', 'HEARTBEAT']):
             self.make_group('tortiepatchesmasks', (a, 4), f"tortiemask{i}")
+        for a, i in enumerate(['MINKFULLWHITE', 'MINKANY', 'MINKTUXEDO', 'MINKLITTLE', 'MINKCOLOURPOINT', 'MINKVAN', 'MINKANYTWO',
+            'MINKMOON', 'MINKPHANTOM', 'MINKPOWDER', 'MINKBLEACHED', 'MINKSAVANNAH', 'MINKFADESPOTS', 'MINKPEBBLESHINE']):
+            self.make_group('minkstorties', (a, 0), f"tortiemask{i}")
+        for a, i in enumerate(['MINKEXTRA', 'MINKONEEAR', 'MINKBROKEN', 'MINKLIGHTTUXEDO', 'MINKBUZZARDFANG', 'MINKRAGDOLL', 
+            'MINKLIGHTSONG', 'MINKVITILIGO', 'MINKBLACKSTAR', 'MINKPIEBALD', 'MINKCURVED', 'MINKPETAL', 'MINKSHIBAINU', 'MINKOWL']):
+            self.make_group('minkstorties', (a, 1), f"tortiemask{i}")
+        for a, i in enumerate(['MINKTIP', 'MINKFANCY', 'MINKFRECKLES', 'MINKRINGTAIL', 'MINKHALFFACE', 'MINKPANTSTWO', 'MINKGOATEE', 'MINKVITILIGOTWO',
+            'MINKPAWS', 'MINKMITAINE', 'MINKBROKENBLAZE', 'MINKSCOURGE', 'MINKDIVA', 'MINKBEARD']):
+            self.make_group('minkstorties', (a, 2), f"tortiemask{i}")
+        for a, i in enumerate(['MINKTAIL', 'MINKBLAZE', 'MINKPRINCE', 'MINKBIB', 'MINKVEE', 'MINKUNDERS', 'MINKHONEY',
+            'MINKFAROFA', 'MINKDAMIEN', 'MINKMISTER', 'MINKBELLY', 'MINKTAILTIP', 'MINKTOES', 'MINKTOPCOVER']):
+            self.make_group('minkstorties', (a, 3), f'tortiemask{i}')
+        for a, i in enumerate(['MINKAPRON', 'MINKCAPSADDLE', 'MINKMASKMANTLE', 'MINKSQUEAKS', 'MINKSTAR', 'MINKTOESTAIL', 'MINKRAVENPAW',
+                'MINKPANTS', 'MINKREVERSEPANTS', 'MINKSKUNK', 'MINKKARPATI', 'MINKHALFWHITE', 'MINKAPPALOOSA', 'MINKDAPPLEPAW']):
+            self.make_group('minkstorties', (a, 4), f'tortiemask{i}')
+        for a, i in enumerate(['MINKHEART', 'MINKLILTWO', 'MINKGLASS', 'MINKMOORISH', 'MINKSEPIAPOINT', 'MINKMINKPOINT', 'MINKSEALPOINT',
+            'MINKMAO', 'MINKLUNA', 'MINKCHESTSPECK', 'MINKWINGS', 'MINKPAINTED', 'MINKHEARTTWO', 'MINKWOODPECKER']):
+            self.make_group('minkstorties', (a, 5), f'tortiemask{i}')
+        for a, i in enumerate(['MINKBOOTS', 'MINKMISS', 'MINKCOW', 'MINKCOWTWO', 'MINKBUB', 'MINKBOWTIE', 'MINKMUSTACHE', 'MINKREVERSEHEART',
+            'MINKSPARROW', 'MINKVEST', 'MINKLOVEBUG', 'MINKTRIXIE', 'MINKSAMMY', 'MINKSPARKLE']):
+            self.make_group('minkstorties', (a, 6), f'tortiemask{i}')
+        for a, i in enumerate(['MINKRIGHTEAR', 'MINKLEFTEAR', 'MINKESTRELLA', 'MINKSHOOTINGSTAR', 'MINKEYESPOT', 'MINKREVERSEEYE',
+            'MINKFADEBELLY', 'MINKFRONT', 'MINKBLOSSOMSTEP', 'MINKPEBBLE', 'MINKTAILTWO', 'MINKBUDDY', 'MINKBACKSPOT', 'MINKEYEBAGS']):
+            self.make_group('minkstorties', (a, 7), f'tortiemask{i}')
+        for a, i in enumerate(['MINKBULLSEYE', 'MINKFINN', 'MINKDIGIT', 'MINKKROPKA', 'MINKFCTWO', 'MINKFCONE', 'MINKMIA', 'MINKSCAR',
+            'MINKBUSTER', 'MINKSMOKEY', 'MINKHAWKBLAZE', 'MINKCAKE', 'MINKROSINA', 'MINKPRINCESS']):
+            self.make_group('minkstorties', (a, 8), f'tortiemask{i}')
+        for a, i in enumerate(['MINKLOCKET', 'MINKBLAZEMASK', 'MINKTEARS', 'MINKDOUGIE']):
+            self.make_group('minkstorties', (a, 9), 'tortiemask' + i)
 
         # SKINS
         for a, i in enumerate(['BLACK', "RED", 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN']):
