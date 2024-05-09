@@ -313,6 +313,9 @@ class Pelt():
                 num = num - 90
             if any(white in 'FULLWHITE' for white in self.white_patches) or self.colour == 'WHITE':
                 num -= 10
+        for _par in parents:
+            if _par.pelt.eye_colour2:
+                num -= 10
         
         if num < 0:
             num = 1
@@ -686,7 +689,6 @@ class Pelt():
                     print("DoublePatches: "+str(len(chosen_pattern))+" tortie patches!")
 
                 self.pattern = list(chosen_pattern)
-
             wildcard_chance = game.config["cat_generation"]["wildcard_tortie"]
             if self.colour:
                 # The "not wildcard_chance" allows users to set wildcard_tortie to 0
@@ -767,8 +769,6 @@ class Pelt():
                     if p in Pelt.little_white + Pelt.mid_white:
                         _temp.remove(p)
 
-            # Only proceed with the direct inheritance if there are white patches that match the pelt.
-            if _temp:
             chosen_white_patches = set()
             # Only proceed with the direct inheritance if there are white patches that match the pelt.
             if _temp:
