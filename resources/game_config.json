@@ -188,6 +188,15 @@
 		"wildcard_tortie": 2,
 		"vit_chance": 7,
 		"random_point_chance": 4
+		"base_extra_white": 5,
+		"max_white_amount": 3,
+		"base_extra_tortie": 3,
+		"max_tortie_amount": 2,
+		"comment": [
+			"max_white_amount is the max amount of white patches one cat can generate with - 2 by default",
+			"max_tortie_amount is the max amount of tortie patches one cat can generate with - 2 by default",
+			"Note that extra patch chances decrease with each extra patch - chances base_extra_white 5 by default, base_extra_tortie 3 by default"
+		]
 	},
 	"cat_name_controls": {
 		"always_name_after_appearance": false,
