@@ -187,7 +187,7 @@
 		"direct_inheritance": 15,
 		"wildcard_tortie": 2,
 		"vit_chance": 7,
-		"random_point_chance": 4
+		"random_point_chance": 4,
 		"base_extra_white": 5,
 		"max_white_amount": 3,
 		"base_extra_tortie": 3,
